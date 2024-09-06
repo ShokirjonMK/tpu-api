@@ -27,7 +27,7 @@ class m240217_094357_create_timetable_student_table extends Migration
 
         $this->createTable('{{%timetable_student}}', [
             'id' => $this->primaryKey(),
-//            'timetable_id' => $this->integer()->notNull(),
+            'timetable_id' => $this->integer()->notNull(),
             'ids_id' => $this->integer()->notNull(),
             'group_id' => $this->integer()->notNull(),
             'student_id' => $this->integer()->notNull(),
@@ -43,7 +43,7 @@ class m240217_094357_create_timetable_student_table extends Migration
             'is_deleted' => $this->tinyInteger()->notNull()->defaultValue(0),
         ], $tableOptions);
 
-//        $this->addForeignKey('mk_timetable_student_table_timetable_table', 'timetable_student', 'timetable_id', 'timetable', 'id');
+        $this->addForeignKey('mk_timetable_student_table_timetable_table', 'timetable_student', 'timetable_id', 'timetable', 'id');
         $this->addForeignKey('mk_timetable_student_table_timetable_ids_table', 'timetable_student', 'ids_id', 'timetable', 'ids');
         $this->addForeignKey('mk_timetable_student_table_group_table', 'timetable_student', 'group_id', 'group', 'id');
         $this->addForeignKey('mk_timetable_student_table_student_table', 'timetable_student', 'student_id', 'student', 'id');

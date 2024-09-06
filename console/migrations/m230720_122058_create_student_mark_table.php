@@ -45,10 +45,6 @@ class m230720_122058_create_student_mark_table extends Migration
             'course_id' => $this->integer()->null(),
 
             'type' => $this->integer()->defaultValue(0),
-//            'exam_id' => $this->integer()->null(),
-//            'exam_student_id' => $this->integer()->null(),
-//            'exam_control_id' => $this->integer()->null(),
-//            'exam_control_student_id' => $this->integer()->null(),
 
             'order'=>$this->tinyInteger(1)->defaultValue(1),
             'status' => $this->tinyInteger(1)->defaultValue(1),

@@ -234,13 +234,13 @@ class m130524_201442_init extends Migration
         ]);
 
         $this->insert('{{%users}}', [
-            'username' => 'ismoil',
+            'username' => 'testAdmin',
             'auth_key' => \Yii::$app->security->generateRandomString(20),
-            'password_hash' => \Yii::$app->security->generatePasswordHash("ismoiluz"),
+            'password_hash' => \Yii::$app->security->generatePasswordHash("testAdminuz"),
             'password_reset_token' => null,
             'access_token' => \Yii::$app->security->generateRandomString(),
             'access_token_time' => time(),
-            'email' => 'ismoil@asd.uz',
+            'email' => 'testAdmin@asd.uz',
             'template' => '',
             'layout' => '',
             'view' => '',
@@ -250,13 +250,13 @@ class m130524_201442_init extends Migration
         ]);
 
         $this->insert('{{%users}}', [
-            'username' => 'azizxon',
+            'username' => 'suAdmin',
             'auth_key' => \Yii::$app->security->generateRandomString(20),
-            'password_hash' => \Yii::$app->security->generatePasswordHash("azizxonuz"),
+            'password_hash' => \Yii::$app->security->generatePasswordHash("suAdminuz"),
             'password_reset_token' => null,
             'access_token' => \Yii::$app->security->generateRandomString(),
             'access_token_time' => time(),
-            'email' => 'azizxon@asd.uz',
+            'email' => 'suAdmin@asd.uz',
             'template' => '',
             'layout' => '',
             'view' => '',
